@@ -9,4 +9,17 @@ public class Department {
         this.capacity = capacity;
         this.attendance = attendance;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public int getAttendance() {
+        return attendance;
+    }
+
 }
