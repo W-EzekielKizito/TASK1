@@ -18,6 +18,14 @@ public class MainApp {
             System.out.println("Total number of students in " + dept.getName() + ": " + dept.getCapacity());
             System.out.println("Percentage of students attendance in " + dept.getName() + ": " + dept.getAttendancePercentage() + "%");
         }
+
+        // Calculate overall university attendance percentage
+        float overallPercentage = ((float) totalAttendance / totalStudents) * 100;
+
+        // Display university totals
+        System.out.println("Total number of students in the University: " + totalStudents);
+        System.out.println("Total number of students Attendance: " + totalAttendance);
+        System.out.println("Percentage of students Attendance: " + overallPercentage + "%");
     }
 
 }
