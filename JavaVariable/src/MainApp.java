@@ -9,5 +9,15 @@ public class MainApp {
 
         int totalStudents = 0;
         int totalAttendance = 0;
+
+        // Process and display department-specific stats
+        for (Department dept : departments) {
+            totalStudents += dept.getCapacity();
+            totalAttendance += dept.getAttendance();
+
+            System.out.println("Total number of students in " + dept.getName() + ": " + dept.getCapacity());
+            System.out.println("Percentage of students attendance in " + dept.getName() + ": " + dept.getAttendancePercentage() + "%");
+        }
     }
+
 }
