@@ -22,4 +22,8 @@ public class Department {
         return attendance;
     }
 
+    // Method to calculate department attendance percentage
+    public float getAttendancePercentage() {
+        return ((float) attendance / capacity) * 100;
+    }
 }
